@@ -60,7 +60,8 @@ df_site = pd.read_csv('/Users/brianchaffee/Data Science/Projects/Project Data/DS
 
 df_site_filter = df_site.drop(['AGE_ADJUSTED_CI_LOWER', 'AGE_ADJUSTED_CI_UPPER', 'CRUDE_CI_LOWER', 'CRUDE_CI_UPPER'], axis=1)
 
-df_site_filter = df_site[df_site['RACE'] == 'All Races']
+
+df_site_filter = df_site_filter[df_site_filter['RACE'] == 'All Races']
 
 df_site_filter = df_site_filter[df_site_filter['YEAR'] != '2016-2020']
 df_site_filter = df_site_filter[df_site_filter['YEAR'] != '1999']
